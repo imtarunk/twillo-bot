@@ -46,7 +46,7 @@ async function generateAIResponse(userMessage) {
     return text;
   } catch (error) {
     console.error("Error generating AI response:", error);
-    return "Sorry, I encountered an error while processing your request. Please try again.";
+    return "Sorry, I encountered an error while processing your request. The Gemini API free limit has been exceeded. Please try again later or contact the administrator.";
   }
 }
 
